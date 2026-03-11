@@ -19,7 +19,7 @@ int deviceCount;
         printf("Device %d: %s\n", dev, deviceProp.name);
     }
     cudaSetDevice(0);
-    int nElm = 100;
+    int nElm = 1000;
     dim3 blockSize (nElm/5);
     dim3 gridSize ((nElm+blockSize.x-1)/blockSize.x);
     //blockSize.x = nElm/5;
